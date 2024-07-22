@@ -1,0 +1,116 @@
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Adiministracion_vue/package-lock.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Adiministracion_vue/package.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/appsettings.Development.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/appsettings.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/aspnetcore
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.deps.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.runtimeconfig.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.pdb
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/AutoMapper.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Dapper.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Dapper.Contrib.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/K4os.Compression.LZ4.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/K4os.Compression.LZ4.Streams.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/K4os.Hash.xxHash.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/MySql.Data.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Text.Json.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/ZstdSharp.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/comerr64.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/gssapi64.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/k5sprt64.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/krb5_64.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/krbcc64.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Windows.Extensions.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.AssemblyReference.cache
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.AssemblyInfoInputs.cache
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.AssemblyInfo.cs
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.CoreCompileInputs.cache
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.MvcApplicationPartsAssemblyInfo.cs
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.MvcApplicationPartsAssemblyInfo.cache
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.sourcelink.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.build.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.development.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.aspnetcore.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.build.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/scopedcss/bundle/aspnetcore.styles.css
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.CopyComplete
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/refint/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.pdb
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.genruntimeconfig.cache
+/Users/julian/Desktop/ApiRest/Julian consigna/aspnetcore/obj/Debug/net8.0/ref/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Adiministracion_vue/package-lock.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Adiministracion_vue/package.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/appsettings.Development.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/appsettings.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/aspnetcore
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.deps.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.runtimeconfig.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/aspnetcore.pdb
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/AutoMapper.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/BouncyCastle.Cryptography.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Dapper.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Dapper.Contrib.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Google.Protobuf.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/K4os.Compression.LZ4.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/K4os.Compression.LZ4.Streams.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/K4os.Hash.xxHash.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/MySql.Data.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Configuration.ConfigurationManager.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Security.Cryptography.ProtectedData.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Security.Permissions.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Text.Json.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/System.Windows.Extensions.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/ZstdSharp.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/comerr64.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/gssapi64.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/k5sprt64.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/krb5_64.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win-x64/native/krbcc64.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/bin/Debug/net8.0/runtimes/win/lib/net8.0/System.Windows.Extensions.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.AssemblyReference.cache
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.AssemblyInfoInputs.cache
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.AssemblyInfo.cs
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.CoreCompileInputs.cache
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.MvcApplicationPartsAssemblyInfo.cs
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.MvcApplicationPartsAssemblyInfo.cache
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.sourcelink.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.build.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.development.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.aspnetcore.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.build.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.aspnetcore.props
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/scopedcss/bundle/aspnetcore.styles.css
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.csproj.CopyComplete
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/refint/aspnetcore.dll
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.pdb
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/aspnetcore.genruntimeconfig.cache
+/Users/julian/Desktop/ApiRest/Julian_consigna/aspnetcore/obj/Debug/net8.0/ref/aspnetcore.dll
