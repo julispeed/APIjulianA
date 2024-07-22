@@ -35,7 +35,7 @@ namespace aspnetcore.Controllers
             }
         }
         [HttpPost]
-        public async Task<IActionResult> InsertarProducto([FromBody] ProductoInsertDTO prod) 
+        public async Task<IActionResult> InsertarProducto([FromBody] ProductoDTO prod) 
         {
             if (!Validar(prod))
             {
@@ -54,7 +54,7 @@ namespace aspnetcore.Controllers
             }
         }
 
-        private string ObtenerQueryInsert(ProductoInsertDTO prod)
+        private string ObtenerQueryInsert(ProductoDTO prod)
         {
             var sql = string.Format(@"
             INSERT INTO PRODUCTO (NOMBRE, CODIGO) VALUES ('{0}', '{1}')
@@ -62,7 +62,7 @@ namespace aspnetcore.Controllers
             return sql;
         }
 
-        private bool Validar(ProductoInsertDTO prod)
+        private bool Validar(ProductoDTO prod)
         {
             return 
             (
