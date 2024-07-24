@@ -1,3 +1,4 @@
+using System.Collections.Frozen;
 using System.Reflection.Metadata.Ecma335;
 using AutoMapper;
 using Dapper;
@@ -22,16 +23,30 @@ namespace aspnetcore.Controllers
 
 
         [HttpGet]
-        public ActionResult<Producto> ObtenerAlgo()
+        public ActionResult<Producto> ObtenerProductos()
         {
             try
             {
-                var producto = _conn.Query<Producto>("SELECT * FROM PRODUCTO").First();
+                var producto = _conn.Query<Producto>("SELECT * FROM PRODUCTO");
                 return Ok(producto);
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error al traer el producto: {ex.Message}"); 
+            }
+        }
+
+        [HttpGet ("codigo: string")]
+        public ActionResult<Producto> ObtenerProductos(string codigo)
+        {
+            try
+            {
+                var producto= _conn.Query<Producto>($"Select * from Producto where codigo like '%{codigo}%'").First();
+                return Ok(producto);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, $"Error al traer el producto: {ex.Message}");
             }
         }
         [HttpPost]

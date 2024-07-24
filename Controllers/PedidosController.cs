@@ -4,6 +4,7 @@ using Dapper;
 using Dapper.Contrib.Extensions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.VisualBasic;
 using MySql.Data.MySqlClient;
 
 namespace aspnetcore.Controllers
@@ -21,18 +22,33 @@ namespace aspnetcore.Controllers
             _conn = new MySqlConnection("server=localhost;database=JulianM;port=3306;uid=root;pwd=Real12341");
         }
 
-        [HttpGet (Name="ObtenerPedido")]
-    public ActionResult<Pedidos> ObtenerPedido()
+        [HttpGet (Name="ObtenerPedidos")]
+    public ActionResult<Pedidos> ObtenerPedidos()
         {
             try
             {
-                var pedido = _conn.Query<Pedidos>("SELECT * FROM PEDIDOS").First();
+                var pedido = _conn.Query<Pedidos>("SELECT * FROM PEDIDOS");
                 return Ok(pedido);
             }
             catch (Exception ex)
             {
                 return StatusCode(StatusCodes.Status500InternalServerError, $"Error al traer el Pedido: {ex.Message}"); 
             }
+        }
+
+        [HttpGet ("Codigo: string")]
+        public ActionResult<Pedidos> ObtenerPedido(string codigo)
+        {
+            try
+            {
+                var pedido= _conn.Query<Pedidos>($"Select * From Pedidos where codigo like '%{codigo}%'").First();
+                return Ok(pedido);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"Error al traer el Pedido: {ex.Message}");
+            }
+
         }
 
         [HttpPost (Name = "Crear_Pedido")]

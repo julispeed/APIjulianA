@@ -4,6 +4,8 @@ public class Mapper : Profile
 {
     public Mapper()
     {
-        CreateMap<ProductoInsertDTO, Producto>();
+        CreateMap<ProductoDTO, Producto>();
+        CreateMap<PedidoDTO, Pedidos>();
+        CreateMap<PedidosItemsDTO, PedidosItems>();
     }
 }
