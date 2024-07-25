@@ -23,6 +23,7 @@ namespace aspnetcore.Controllers
         }
 
         [HttpGet (Name="ObtenerPedidos")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
     public ActionResult<Pedidos> ObtenerPedidos()
         {
             try
@@ -37,6 +38,7 @@ namespace aspnetcore.Controllers
         }
 
         [HttpGet ("Codigo: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<Pedidos> ObtenerPedido(string codigo)
         {
             try
@@ -52,6 +54,7 @@ namespace aspnetcore.Controllers
         }
 
         [HttpPost (Name = "Crear_Pedido")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> GenerarPedido([FromBody] PedidoDTO pedido)
         {
             if(!Validar(pedido))
@@ -76,6 +79,22 @@ namespace aspnetcore.Controllers
                 &&
                 pedido.CODIGO != ""
             );
+        }
+
+
+        [HttpDelete ("codigo producto: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> DeletearP(string codigo)
+        {
+            try
+            {
+                 _conn.Query<PedidosItems>($"Delete from Pedidos where codigo='{codigo}'");
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo eliminar el pedido {ex.Message}");
+            }
         }
         private string ObtenerQueryInsert(PedidoDTO pedido)
         {

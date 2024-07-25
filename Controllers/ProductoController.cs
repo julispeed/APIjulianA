@@ -11,11 +11,11 @@ namespace aspnetcore.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PruebaController : ControllerBase
+    public class ProductoController : ControllerBase
     {
         private readonly MySqlConnection _conn;
         private readonly IMapper _mapper;
-        public PruebaController(IConfiguration config, IMapper mapper)
+        public ProductoController(IConfiguration config, IMapper mapper)
         {
             _mapper = mapper;
             _conn = new MySqlConnection("server=localhost;database=JulianM;port=3306;uid=root;pwd=Real12341");
@@ -23,6 +23,7 @@ namespace aspnetcore.Controllers
 
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<Producto> ObtenerProductos()
         {
             try
@@ -37,6 +38,7 @@ namespace aspnetcore.Controllers
         }
 
         [HttpGet ("codigo: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<Producto> ObtenerProductos(string codigo)
         {
             try
@@ -50,6 +52,7 @@ namespace aspnetcore.Controllers
             }
         }
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> InsertarProducto([FromBody] ProductoDTO prod) 
         {
             if (!Validar(prod))
@@ -69,6 +72,20 @@ namespace aspnetcore.Controllers
             }
         }
 
+        [HttpDelete]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public async Task<IActionResult> DeletearP(string codigo)
+        {
+            try
+            {
+                _conn.Query<PedidosItems>($"Delete from Producto where codigo='{codigo}'");
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo eliminar el pedido {ex.Message}");
+            }
+        }
         private string ObtenerQueryInsert(ProductoDTO prod)
         {
             var sql = string.Format(@"

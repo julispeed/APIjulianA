@@ -10,6 +10,7 @@ public class PedidosItems
     public int IdProducto { get; set; }
     public int Cantidad { get; set; }
     public double precio { get; set; }
+    public string CODIGO { get; set; } = string.Empty;
     
 }
 

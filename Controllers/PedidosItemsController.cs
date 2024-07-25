@@ -43,6 +43,7 @@ namespace aspnetcore.Controllers
         }
         
         [HttpGet ("Codigo_Pedido: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<PedidosItems> ObtenerPedidoItemporCodigoPedido(string codigoPe)
         {
             try
@@ -56,6 +57,7 @@ namespace aspnetcore.Controllers
             }
         }
         [HttpGet ("Codigo_Producto: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<PedidosItems> ObtenerPedidoItemPorCodigoProductp(string codigoP)
         {
             try
@@ -69,8 +71,23 @@ namespace aspnetcore.Controllers
             }
         }
 
+        [HttpGet ("Codigo: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public ActionResult<PedidosItems> ObtenerPedidoItemPorCodigo(string codigo)
+        {
+            try
+            {
+                var pedidoItem= _conn.Query<PedidosItems>($"Select * from PedidosItems where  codigo like '%{codigo}%')").First();
+                return Ok(pedidoItem);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo traer el PedidoItem: {ex.Message}");
+            }
+        }
         
         [HttpPost]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> InsertarPedidosItems([FromBody] PedidosItemsDTO pedidoI)
 
         {
@@ -85,7 +102,8 @@ namespace aspnetcore.Controllers
             }
         }
     
-        [HttpDelete ("codigo producto: string")]
+        [HttpDelete ("codigo: string")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public async Task<IActionResult> DeletearP(string codigo)
         {
             try
@@ -102,7 +120,7 @@ namespace aspnetcore.Controllers
     {
         var pedido= _conn.Query<Pedidos>($"Select Id_pedido from Pedidos where  codigo='{pedidoI.codigoPedido}'").First();
         var producto= _conn.Query<Producto>($"Select Id_producto from Producto where  codigo='{pedidoI.codigoProducto}'").First();
-        var sql= string.Format($"Insert into PedidosItems (IdPedido,IdProducto,cantidad,precio) values ('{pedido.ID_PEDIDO}','{producto.ID_PRODUCTO}','{pedidoI.Cantidad}','{pedidoI.precio}')");
+        var sql= string.Format($"Insert into PedidosItems (IdPedido,IdProducto,cantidad,precio,codigo   ) values ('{pedido.ID_PEDIDO}','{producto.ID_PRODUCTO}','{pedidoI.Cantidad}','{pedidoI.precio}', '{pedidoI.CODIGO}')");
         return sql;
     }
 
