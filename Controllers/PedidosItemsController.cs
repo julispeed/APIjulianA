@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Dapper;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Infrastructure;
 using Microsoft.Extensions.Logging;
 using MySql.Data.MySqlClient;
+using Org.BouncyCastle.Asn1;
+using Org.BouncyCastle.Crypto.Parameters;
 
 namespace aspnetcore.Controllers
 {
@@ -25,6 +28,7 @@ namespace aspnetcore.Controllers
         }
 
         [HttpGet (Name ="ObtenerPedidosItems")]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public ActionResult<PedidosItems> ObtenerPedidosItems()
         {
             try
@@ -52,11 +56,11 @@ namespace aspnetcore.Controllers
             }
         }
         [HttpGet ("Codigo_Producto: string")]
-        public ActionResult<PedidosItems> ObtenerPedidoItemPorCodigoProducot(string codigoP)
+        public ActionResult<PedidosItems> ObtenerPedidoItemPorCodigoProductp(string codigoP)
         {
             try
             {
-                var pedidoItem= _conn.Query<PedidosItems>($"Select * from PedidosItems where  IdPedido in (select Id_Producto from producto where codigo like '%{codigoP}%')").First();
+                var pedidoItem= _conn.Query<PedidosItems>($"Select * from PedidosItems where  IdProducto in (select Id_Producto from producto where codigo like '%{codigoP}%')").First();
                 return Ok(pedidoItem);
             }
             catch (Exception ex)
@@ -64,8 +68,59 @@ namespace aspnetcore.Controllers
                 return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo traer el PedidoItem: {ex.Message}");
             }
         }
-        
 
+        
+        [HttpPost]
+        public async Task<IActionResult> InsertarPedidosItems([FromBody] PedidosItemsDTO pedidoI)
+
+        {
+            try
+            {
+                await _conn.QueryAsync(ObtenerInsert(pedidoI));
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo insertar el pedido {ex.Message}");
+            }
+        }
+    
+        [HttpDelete ("codigo producto: string")]
+        public async Task<IActionResult> DeletearP(string codigo)
+        {
+            try
+            {
+                _conn.Query<PedidosItems>($"Delete from PedidosItems where IdProducto in (Select Id_Producto from Producto where codigo='{codigo}')");
+                return Ok();
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError,$"No se pudo eliminar el pedido Item {ex.Message}");
+            }
+        }
+    private string ObtenerInsert(PedidosItemsDTO pedidoI)
+    {
+        var pedido= _conn.Query<Pedidos>($"Select Id_pedido from Pedidos where  codigo='{pedidoI.codigoPedido}'").First();
+        var producto= _conn.Query<Producto>($"Select Id_producto from Producto where  codigo='{pedidoI.codigoProducto}'").First();
+        var sql= string.Format($"Insert into PedidosItems (IdPedido,IdProducto,cantidad,precio) values ('{pedido.ID_PEDIDO}','{producto.ID_PRODUCTO}','{pedidoI.Cantidad}','{pedidoI.precio}')");
+        return sql;
+    }
+
+    private bool Validar(PedidosItemsDTO pedidoI)
+    {
+        return 
+            (
+                pedidoI.codigoPedido != ""
+                &&
+                pedidoI.codigoProducto != ""
+                &&
+                pedidoI.Cantidad!=0
+                &&
+                pedidoI.precio!=0
+
+            );
+    }
+    
 
     }
 }
